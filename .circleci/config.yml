@@ -7,9 +7,6 @@ jobs:
     steps:
       - checkout
       - run:
-          name: The First Step
+          name: Installing dependencies
           command: |
-            g++ --version
-            gcc --version
-            make --version
-            cmake --version
+            sudo apt-get cmake

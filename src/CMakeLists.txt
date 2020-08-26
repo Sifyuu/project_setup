@@ -3,4 +3,7 @@ project(Pipeline_project)
 
 # Dependencies
 
+
 # Library definition
+add_library(source
+        fact.hpp fact.cpp)

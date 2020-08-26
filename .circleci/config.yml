@@ -9,4 +9,4 @@ jobs:
       - run:
           name: Installing dependencies
           command: |
-            sudo apt-get cmake
+            sudo apt-get install cmake

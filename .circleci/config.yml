@@ -9,4 +9,4 @@ jobs:
       - run:
           name: Installing dependencies
           command: |
-            sudo apt-get install cmake
+            sudo snap --classic install cmake

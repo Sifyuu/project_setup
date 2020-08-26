@@ -3,16 +3,10 @@ jobs:
   build:
     # pre-built images: https://circleci.com/docs/2.0/circleci-images/
     docker:
-      - image: cimg/base:2020.01
+      - image: circleci/rust:latest
     steps:
       - checkout
       - run:
           name: Installing dependencies
           command: |
-            sudo apt-get update -y
-            sudo apt-get upgrade -y
-            sudo apt-get dist-upgrade -y
-            sudo apt-get autoremove -y
-            sudo apt-get autoclean -y
-            sudo apt-get install snapd
-            sudo snap --classic install cmake
+            cmake --version

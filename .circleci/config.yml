@@ -9,4 +9,4 @@ jobs:
       - run:
           name: Installing dependencies
           command: |
-            cmake --version
+            echo "Hello, World!"
